@@ -284,3 +284,5 @@ pkg help
 Learn More about Termux Visit - <https://termux.com/>
 
 Bookmark this Page More Updates on the way 😊
+github.com/aytaccakir
+github.com/aaytaccc
