@@ -1,0 +1,35 @@
+Android Studio
+
+INSTALLATION INSTRUCTIONS
+===============================================================================
+
+  1. Unpack the Android Studio distribution archive that you downloaded
+  2.      where you wish to install the program. We will refer to this
+  3.      location as your {installation home}.
+  2. To start the application, open a console, cd into "{installation home}/bin" and type:
+       ./studio.sh
+     This will initialize various configuration files in the configuration directory:
+          ~/.config/Google/AndroidStudio2020.3.
+  3. [OPTIONAL] Add "{installation home}/bin" to your PATH environment
+  4.      variable so that you can start Android Studio from any directory.
+  4. [OPTIONAL] To adjust the value of the JVM heap size, create a file studio.vmoptions
+  5.      (or studio64.vmoptions if using a 64-bit JDK) in the configuration directory
+  6.      and set the -Xms and -Xmx parameters. To see how to do this,
+  7.      you can reference the vmoptions file under "{installation home}/bin" as a model
+  8.      but do not modify it, add your options to the new file.
+  [OPTIONAL] Change the location of the "config" and "system" directories
+    ------------------------------------------------------------------------------
+
+  By default, Android Studio stores all your settings in the
+    ~/.config/Google/AndroidStudio2020.3 directory
+      and uses ~/.local/share/Google/AndroidStudio2020.3 as a data cache.
+        To change the location of these directories:
+  1. Open a console and cd into ~/.config/Google/AndroidStudio2020.3
+  2. Create a file idea.properties and set the idea.system.path and idea.config.path variables, for example:
+     idea.system.path=~/custom/system
+          idea.config.path=~/custom/config
+  NOTE: Store the data cache ("system" directory) on a disk with at least 1 GB of free space.
+
+Enjoy!
+
+-Android Studio Development Team
