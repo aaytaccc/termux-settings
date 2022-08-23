@@ -1,0 +1,21 @@
+export ANDROID_HOME=/Users/{{your user}}/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/{{your user}}/Library/Android/sdk
+export ANDROID_AVD_HOME=/Users/{{your user}}/.android/avd
+
+
+export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$PATH
+
+export ANDROID_HOME=$HOME/Android/Sdk export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk export ANDROID_AVD_HOME=$HOME/.android/avd
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+source $HOME/.bashrc
+echo $ANDROID_SDK_ROOT
+
+echo "export ANDROID_HOME=~/Library/Android/sdk \
+      export ANDROID_SDK_ROOT=~/Library/Android/sdk \
+      export ANDROID_AVD_HOME=~/.android/avd" \
+>> ~/.bash_profile && source ~/.bash_profile
