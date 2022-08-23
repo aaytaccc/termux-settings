@@ -1,0 +1,19 @@
+chmod +x add-user-script.sh
+
+./add-user-script.sh
+Only root may add a user to the system.
+sudo ./add-user-script.sh
+./adduser
+
+Enter username : aaytaccc
+Enter password : ******
+User has been added to system!
+
+
+echo "user_name:password" | chpasswd
+
+echo 'aytaccakir' | chpasswd
+
+
+grep "^username" /etc/passwd
+grep "^tom" /etc/passwd
