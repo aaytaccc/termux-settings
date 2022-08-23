@@ -1,0 +1,35 @@
+git clone --recurse-submodules https://github.com/opengapps/opengappsyorumları hem
+
+
+./download_sources.sh [--shallow] [arch]
+
+
+
+git clone git@github.com:opengapps/opengapps.git
+
+./download_sources.sh [--shallow] [arch]
+
+Make
+
+make arm-23
+
+
+make arm-23-stock
+
+
+./add_sourceapp.sh [/path/to/the/files/you/want/to/add.apk]* [beta] [/apps/that/should/be/marked/as/beta.apk...]*
+
+
+
+
+./upload_sources.sh [archs]*
+
+
+./report_sources.sh
+
+
+
+
+
+./report_sources.sh ( ([sdk] [archs]*) || [arch-sdk] ) && [hash] || [max*mb] || [min*mb] || [nobeta] || [nohelp] || [noleanback] || [nosig]
+
