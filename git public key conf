@@ -1,0 +1,6 @@
+ssh -vT git@github.com
+> OpenSSH_8.1p1, LibreSSL 2.7.3
+> debug1: Reading configuration data /Users/you/.ssh/config
+> debug1: Reading configuration data /etc/ssh/ssh_config
+> debug1: /etc/ssh/ssh_config line 47: Applying options for *
+> debug1: Connecting to github.com port 22.
