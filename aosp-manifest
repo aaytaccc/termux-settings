@@ -1,0 +1,51 @@
+repo init -u https://github.com/USBhost/My-AOSP-manifest.git -b O
+
+
+repo sync
+
+1.) . build/envsetup.sh
+2.) lunch ## choose flounder
+
+"make otapackage -j12" like that
+
+
+
+
+sudo apt-get remove openjdk-* icedtea-*
+
+
+
+sudo apt-get install git ccache automake lzop bison gperf build-essential zip curl zlib1g-dev g++-multilib python-networkx libxml2-utils bzip2 libbz2-dev libbz2-1.0 libghc-bzlib-dev squashfs-tools pngcrush schedtool dpkg-dev liblz4-tool make optipng maven libc6-dev linux-libc-dev gcc-multilib g++-5-multilib libssl-dev
+ 
+
+mkdir ~/bin && curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
+
+
+nano ~/.bashrc
+
+export PATH=~/bin:$PATH
+export USE_CCACHE=1
+ 
+source ~/.bashrc
+
+mkdir ~/android
+cd ~/android
+
+repo init -u https://github.com/CyanogenMod/android.git -b cm-13.0
+
+repo sync
+
+sudo add-apt-repository ppa:openjdk-r/ppa
+
+sudo apt-get update && sudo apt-get install openjdk-7-jdk
+
+
+
+
+
+
+
+
+
+
+
